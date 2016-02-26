@@ -1,5 +1,18 @@
 $(document).ready(function(){
-  $('#changeColour').click(function(event) {
-    $('.colour').css('background', 'red');
+  $('#default').click(function(event) {
+    $('.container').attr('id', 'default');
+  });
+  $('#navy').click(function(event) {
+    $('.container').attr('id', 'navy');
   });
 });
+
+
+
+
+// btn-default
+// default
+// navy
+// green
+// teal
+// magenta

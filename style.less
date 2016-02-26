@@ -1,9 +1,77 @@
 @import "foxlight.less";
 @import "variables.less";
 
+@charcoal: #4d4f53;
+
 @yellow: #ffc958;
 @yellow-dark: darken(@yellow, 15%);
 
+@navy: #007bb0;
+@navy-dark: darken(@navy, 15%);
+
+@green: #40b488;
+@green-dark: darken(@green, 15%);
+
+@teal: #00bfb8;
+@teal-dark: darken(@teal, 15%);
+
+@magenta: #ef2c65;
+@magenta-dark: darken(@magenta, 15%);
+
+#default {
+  .colour {
+    background: #F1F2F2;
+  }
+  .btn-default {
+    background: @yellow;
+    box-shadow: 0 2px 0 @yellow-dark;
+    color: @charcoal;
+  }
+}
+
+#navy {
+  .colour {
+    background: #E6F6F9;
+  }
+  .btn-default {
+    background: @navy;
+    box-shadow: 0 2px 0 @navy-dark;
+    color: white;
+  }
+}
+
+#green {
+  .colour {
+    background: #EDFAF6;
+  }
+  .btn-default {
+    background: @green;
+    box-shadow: 0 2px 0 @green-dark;
+    color: white;
+  }
+}
+
+#teal {
+  .colour {
+    background: #E4FBFA;
+  }
+  .btn-default {
+    background: @teal;
+    box-shadow: 0 2px 0 @teal-dark;
+    color: white;
+  }
+}
+
+#magenta {
+  .colour {
+    background: #FFEAF3;
+  }
+  .btn-default {
+    background: @magenta;
+    box-shadow: 0 2px 0 @magenta-dark;
+    color: white;
+  }
+}
 
 // font weights available 300,400,500
 body, html {
@@ -12,15 +80,12 @@ body, html {
     margin: 0;
 }
 
-
 // Navbar style
-
 .navbar {
   border-radius: 0;
   background: #233751;
   margin-bottom: 50px;
 }
-
 .navbar-brand {
   float: right;
   text-align: right;
@@ -28,9 +93,6 @@ body, html {
   font-size: 16px !important;
   font-weight: 500 !important;
 }
-
-
-
 ///////////////
 
 article.intro {
