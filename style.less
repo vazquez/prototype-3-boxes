@@ -1,0 +1,36 @@
+@import "variables.less";
+
+// font weights available 300,400,500
+body, html {
+    font-family: 'Fira Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+
+
+
+.animation-example {
+    -webkit-animation-name: example;
+    -webkit-animation-duration:  .4s;
+    -webkit-animation-iteration-count: 3;
+    -webkit-animation-delay: .5s;
+}
+
+@-webkit-keyframes example {
+    0% {
+        -webkit-transform: scale(1.5);
+        opacity: .5;
+    }
+    50%{
+        -webkit-transform: scale(.7);
+        opacity: .5;
+    }
+    100% {
+        -webkit-transform: scale(.7);
+        opacity: 0;
+    }
+}
